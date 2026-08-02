@@ -39,6 +39,32 @@
 
   var minTimeReached=false;
   var pageLoaded=(document.readyState==='complete');
+  var loadingFinished=false;
+
+  function finishLoading(){
+    if(loadingFinished) return;
+    loadingFinished=true;
+    html.classList.add('aldi-loading-complete');
+    html.style.overflow='';
+    body.style.overflow='';
+    body.style.position='';
+    body.style.top='';
+    body.style.left='';
+    body.style.right='';
+    document.documentElement.style.overflow='';
+    document.documentElement.style.position='';
+    if(!screen) return;
+    screen.classList.add('fade-out');
+    screen.style.pointerEvents='none';
+    screen.style.visibility='hidden';
+    screen.style.zIndex='-1';
+    screen.style.display='none';
+    screen.classList.add('hidden');
+    setTimeout(function(){
+      if(screen.parentNode) screen.parentNode.removeChild(screen);
+      window.removeEventListener('resize',setVh);
+    },500);
+  }
 
   setTimeout(function(){minTimeReached=true;if(pageLoaded)finishLoading();},4200);
 
