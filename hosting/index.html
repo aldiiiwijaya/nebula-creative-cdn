@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nebula Creative | Aldi Wijaya</title>
+<script>
+(function(){var t=localStorage.getItem('aldi-theme');if(!t)localStorage.setItem('aldi-theme','dark');document.documentElement.setAttribute('data-theme',t||'dark');})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Inter:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<!-- ===================== MODE: loading screen + navbar ===================== -->
+<div class="aldi-loading-screen">
+  <div class="aldi-loading-container">
+    <h1 class="heading" aria-label="Nebula Creative">
+      <div class="heading-line">
+        <span style="animation-delay:0s">N</span><span style="animation-delay:.18s">E</span><span style="animation-delay:.36s">B</span><span style="animation-delay:.54s">U</span><span style="animation-delay:.72s">L</span><span style="animation-delay:.9s">A</span>
+      </div>
+      <div class="heading-line creative-line">
+        <span style="animation-delay:1.1s">C</span><span style="animation-delay:1.22s">R</span><span style="animation-delay:1.34s">E</span><span style="animation-delay:1.46s">A</span><span style="animation-delay:1.58s">T</span><span style="animation-delay:1.7s">I</span><span style="animation-delay:1.82s">V</span><span style="animation-delay:1.94s">E</span>
+      </div>
+    </h1>
+  </div>
+</div>
+
+<div class="aldi-navbar-spacer"></div>
+<div class="aldi-navbar-wrapper">
+  <div class="aldi-navbar-bar" id="aldiNavbarBar">
+    <div class="aldi-navbar-content">
+      <div class="aldi-navbar-links">
+        <a href="#about" class="aldi-navbar-item aldi-navbar-current">About</a>
+        <a href="#behindthelens" class="aldi-navbar-item">Highlight</a>
+        <a href="#services" class="aldi-navbar-item">Services</a>
+        <a href="#highlightproject" class="aldi-navbar-item">Featured</a>
+        <a href="#galleryproject" class="aldi-navbar-item">Portfolio</a>
+        <a href="#value" class="aldi-navbar-item">Workflow</a>
+        <a href="#testimoni" class="aldi-navbar-item">Testimonials</a>
+        <a href="#contact" class="aldi-navbar-item">Contact</a>
+        <a href="#clients" class="aldi-navbar-item">Clients</a>
+      </div>
+      <div class="aldi-navbar-divider"></div>
+      <button class="aldi-theme-btn" id="aldiThemeBtn" aria-label="Toggle theme">
+        <svg class="aldi-moon-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="moon-glow" d="M9.8815 1.36438L9.88141 1.36429C9.70639 1.18942 9.48342 1.07041 9.24073 1.02235C8.99803 0.974286 8.74653 0.999323 8.51808 1.09429L8.51753 1.09452C4.54484 2.75146 1.75 6.6732 1.75 11.25C1.75 17.3262 6.67489 22.25 12.75 22.25C14.9217 22.2501 17.0448 21.6075 18.852 20.4032C20.6591 19.1989 22.0695 17.4868 22.9055 15.4825L22.9058 15.4818C23.0007 15.2532 23.0256 15.0015 22.9774 14.7587C22.9291 14.5159 22.8099 14.2929 22.6348 14.118C22.4597 13.9431 22.2366 13.8241 21.9937 13.7761C21.7509 13.7281 21.4993 13.7533 21.2708 13.8484L21.2707 13.8485C20.2346 14.2801 19.1231 14.5016 18.0007 14.5H18C15.7457 14.5 13.5837 13.6045 11.9896 12.0104C10.3955 10.4163 9.5 8.25433 9.5 5.99999L9.5 5.99927C9.49838 4.8769 9.71983 3.76541 10.1515 2.72938C10.2468 2.50072 10.2721 2.24888 10.224 2.00584C10.1759 1.76281 10.0567 1.53954 9.8815 1.36438Z"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="aldi-mobile-controls">
+    <button class="aldi-theme-btn" id="aldiThemeBtnMobile" aria-label="Toggle theme">
+      <svg class="aldi-moon-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="moon-glow" d="M9.8815 1.36438L9.88141 1.36429C9.70639 1.18942 9.48342 1.07041 9.24073 1.02235C8.99803 0.974286 8.74653 0.999323 8.51808 1.09429L8.51753 1.09452C4.54484 2.75146 1.75 6.6732 1.75 11.25C1.75 17.3262 6.67489 22.25 12.75 22.25C14.9217 22.2501 17.0448 21.6075 18.852 20.4032C20.6591 19.1989 22.0695 17.4868 22.9055 15.4825L22.9058 15.4818C23.0007 15.2532 23.0256 15.0015 22.9774 14.7587C22.9291 14.5159 22.8099 14.2929 22.6348 14.118C22.4597 13.9431 22.2366 13.8241 21.9937 13.7761C21.7509 13.7281 21.4993 13.7533 21.2708 13.8484L21.2707 13.8485C20.2346 14.2801 19.1231 14.5016 18.0007 14.5H18C15.7457 14.5 13.5837 13.6045 11.9896 12.0104C10.3955 10.4163 9.5 8.25433 9.5 5.99999L9.5 5.99927C9.49838 4.8769 9.71983 3.76541 10.1515 2.72938C10.2468 2.50072 10.2721 2.24888 10.224 2.00584C10.1759 1.76281 10.0567 1.53954 9.8815 1.36438Z"/></svg>
+    </button>
+    <div class="aldi-navbar-burger" id="aldiNavbarBurger">
+      <span class="aldi-navbar-burger-line"></span><span class="aldi-navbar-burger-line"></span><span class="aldi-navbar-burger-line"></span>
+    </div>
+  </div>
+  <div class="aldi-navbar-drawer" id="aldiNavbarDrawer">
+    <a href="#about" class="aldi-navbar-item aldi-navbar-current">About</a>
+    <a href="#behindthelens" class="aldi-navbar-item">Highlight</a>
+    <a href="#services" class="aldi-navbar-item">Services</a>
+    <a href="#highlightproject" class="aldi-navbar-item">Featured</a>
+    <a href="#galleryproject" class="aldi-navbar-item">Portfolio</a>
+    <a href="#value" class="aldi-navbar-item">Workflow</a>
+    <a href="#testimoni" class="aldi-navbar-item">Testimonials</a>
+    <a href="#contact" class="aldi-navbar-item">Contact</a>
+    <a href="#clients" class="aldi-navbar-item">Clients</a>
+  </div>
+  <div class="aldi-navbar-backdrop" id="aldiNavbarBackdrop"></div>
+</div>
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about">
+<div class="aldi-about-wrapper">
+<div class="aldi-about-container">
+<div class="aldi-about-inner">
+<div class="aldi-about-grid">
+<div class="aldi-about-content">
+<div class="aldi-about-mobile">
+<div class="aldi-about-photo-container">
+<div class="aldi-about-photo aldi-about-float" onclick="aldiAboutOpen()">
+<img alt="Aldi Wijaya" src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/profile-photos/profile-aldi-wijaya-videographer-04.png" class="aldi-about-avatar" loading="lazy">
+</div>
+<div class="aldi-about-status"><div class="aldi-about-status-dot"></div><span class="aldi-about-status-text">Available For Collaboration</span></div>
+</div>
+</div>
+<div class="aldi-about-name-block">
+<h2 class="aldi-about-hello">Hello, I'm</h2>
+<h1 class="aldi-about-title">ALDI WIJAYA</h1>
+<p class="aldi-about-founder">Founder of Nebula Creative</p>
+</div>
+<div class="aldi-about-role"><span class="aldi-about-typing" id="aldiAboutType"></span><span class="aldi-about-cursor"></span></div>
+<p class="aldi-about-bio">Seorang videographer, video editor, dan social media management dengan passion dalam menciptakan konten visual yang berdampak. Saya aktif mengerjakan project secara independen melalui Nebula Creative, mulai dari produksi video, editing, hingga pengelolaan social media. Selain itu, saya juga menjalankan peran yang sama bersama tim Navis Digital Marketing, agensi digital marketing yang siap membantu brand kamu tumbuh secara menyeluruh. Sebagian karya dalam portofolio ini lahir dari kedua jalur tersebut dan semua dikerjakan dengan standar dan dedikasi yang sama.</p>
+<div class="aldi-about-quote"><p class="aldi-about-quote-text">"Social media is not a media. The key is to listen, engage, and build relationships."</p></div>
+<div class="aldi-about-socials">
+<a href="https://instagram.com/aldiiiwijaya_" target="_blank" rel="noopener noreferrer" class="aldi-about-social" title="Instagram Aldi Wijaya"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+<a href="https://www.linkedin.com/in/aldiiiwijaya" target="_blank" rel="noopener noreferrer" class="aldi-about-social" title="LinkedIn Aldi Wijaya"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+<a href="https://aldiiiwijaya.crd.co" target="_blank" rel="noopener noreferrer" class="aldi-about-social" title="Website Portfolio Aldi Wijaya"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></a>
+</div>
+<div class="aldi-about-actions">
+<a href="#highlightproject" class="aldi-about-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L3.09 8.26L4 9L12 14L20 9L20.91 8.26L12 2ZM21 16L12 21L3 16V10L12 15L21 10V16Z"/></svg><span>Highlight Project</span></a>
+<a href="#contact" class="aldi-about-link aldi-about-outline"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4C2.89 4 2 4.89 2 6V18C2 19.11 2.89 20 4 20H20C21.11 20 22 19.11 22 18V6C22 4.89 21.11 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"/></svg><span>Contact Me</span></a>
+</div>
+</div>
+<div class="aldi-about-sidebar">
+<div class="aldi-about-photo-container">
+<div class="aldi-about-photo aldi-about-float" onclick="aldiAboutOpen()"><img alt="Aldi Wijaya" src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/profile-photos/profile-aldi-wijaya-videographer-04.png" class="aldi-about-avatar" loading="lazy"></div>
+<div class="aldi-about-status"><div class="aldi-about-status-dot"></div><span class="aldi-about-status-text">Available For Collaboration</span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="aldi-about-inner">
+<div class="aldi-about-metrics">
+<div class="aldi-about-metric"><div class="aldi-about-metric-inner"><h3 class="aldi-about-num" data-count="200">0</h3><p class="aldi-about-label">TOTAL PROJECTS</p></div></div>
+<div class="aldi-about-metric"><div class="aldi-about-metric-inner"><h3 class="aldi-about-num" data-count="95" data-suffix="%">0%</h3><p class="aldi-about-label">HAPPY CLIENTS</p></div></div>
+<div class="aldi-about-metric"><div class="aldi-about-metric-inner"><h3 class="aldi-about-num" data-count="6">0</h3><p class="aldi-about-label">YEARS EXPERIENCE</p></div></div>
+</div>
+</div>
+</div>
+<div class="aldi-about-modal" onclick="aldiAboutClose(event)">
+<div class="aldi-about-modal-inner">
+<img alt="Aldi Wijaya" src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/profile-photos/profile-aldi-wijaya-videographer-04.png" loading="lazy">
+<div class="aldi-about-close" onclick="aldiAboutClose(event)"></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===================== VIDEO HIGHLIGHT (BTL) ===================== -->
+<section id="behindthelens">
+<div class="aldi-video-wrapper">
+<div class="aldi-video-container">
+<div class="aldi-video-header">
+<p class="aldi-video-label">Featured Work</p>
+<h2 class="aldi-video-title">Video Highlight</h2>
+<p class="aldi-video-desc">Dari konsep hingga tayang, setiap karya dirancang untuk memperkuat identitas brand Anda melalui visual yang autentik, storytelling yang kuat, dan strategi konten yang berdampak nyata.</p>
+</div>
+<div class="aldi-video-main">
+<div class="aldi-video-player-col">
+<div class="aldi-video-frame-wrap"><div class="aldi-video-frame"><iframe id="aldiVideoIframe" allow="autoplay; encrypted-media" allowfullscreen></iframe></div></div>
+<div class="aldi-video-info"><div class="aldi-video-now"><div class="aldi-video-now-dot"></div><span class="aldi-video-now-text">Now Playing</span></div><p class="aldi-video-current-title" id="aldiVideoCurrentTitle">8'Amities - Astro</p></div>
+</div>
+<div class="aldi-video-playlist-col">
+<div class="aldi-video-playlist-top">
+<p class="aldi-video-playlist-label">Playlist</p>
+<div class="aldi-video-playlist" id="aldiVideoPlaylist">
+<div class="aldi-video-item active" data-id="AmxPIua3gFg" data-title="8'Amities - Astro"><div class="aldi-video-thumb"><img src="https://img.youtube.com/vi/AmxPIua3gFg/mqdefault.jpg" alt="8'Amities - Astro" loading="lazy"><div class="aldi-video-thumb-overlay"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div></div><div class="aldi-video-item-info"><p class="aldi-video-item-title">8'Amities - Astro</p></div></div>
+<div class="aldi-video-item" data-id="AKRjRzgrkYY" data-title="Cemilan Keto - Pizza"><div class="aldi-video-thumb"><img src="https://img.youtube.com/vi/AKRjRzgrkYY/mqdefault.jpg" alt="Cemilan Keto - Pizza" loading="lazy"><div class="aldi-video-thumb-overlay"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div></div><div class="aldi-video-item-info"><p class="aldi-video-item-title">Cemilan Keto - Pizza</p></div></div>
+<div class="aldi-video-item" data-id="gi5C55wAW3s" data-title="Ribsgold - Togs"><div class="aldi-video-thumb"><img src="https://img.youtube.com/vi/gi5C55wAW3s/mqdefault.jpg" alt="Ribsgold - Togs" loading="lazy"><div class="aldi-video-thumb-overlay"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div></div><div class="aldi-video-item-info"><p class="aldi-video-item-title">Ribsgold - Togs</p></div></div>
+<div class="aldi-video-item" data-id="cdaeSV1kP2k" data-title="Seven The Salon - Velora Layer"><div class="aldi-video-thumb"><img src="https://img.youtube.com/vi/cdaeSV1kP2k/mqdefault.jpg" alt="Seven The Salon - Velora Layer" loading="lazy"><div class="aldi-video-thumb-overlay"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div></div><div class="aldi-video-item-info"><p class="aldi-video-item-title">Seven The Salon - Velora Layer</p></div></div>
+<div class="aldi-video-item" data-id="2HYKLLIIwyo" data-title="Sambarajo - Iga Bakar"><div class="aldi-video-thumb"><img src="https://img.youtube.com/vi/2HYKLLIIwyo/mqdefault.jpg" alt="Sambarajo - Iga Bakar" loading="lazy"><div class="aldi-video-thumb-overlay"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div></div><div class="aldi-video-item-info"><p class="aldi-video-item-title">Sambarajo - Iga Bakar</p></div></div>
+</div>
+</div>
+<a href="#galleryproject" class="aldi-video-gallery-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>Lihat Gallery Project</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<div class="aldi-services-wrapper" data-embed="aldi-services" id="services"><section class="aldi-services-section"><div class="aldi-services-container"><div class="aldi-services-content"><h2 id="judul-srvc" class="aldi-judul-srvc">Professional Services</h2><p class="aldi-services-description">Transformasikan ide kreatif Anda menjadi karya visual yang berdampak tinggi. Melalui teknik sinematik matang dan manajemen strategis, saya siap membawa identitas brand Anda menuju level yang lebih tinggi.</p></div></div></section></div>
+<div class="aldi-services-wrapper"><div class="aldi-services-container"><div class="aldi-services-inner"><div class="aldi-services-grid">
+<div class="aldi-services-card"><div class="aldi-services-content"><div class="aldi-services-icon-wrapper"><div class="aldi-services-icon-box"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><line x1="6" y1="9" x2="10" y2="9"/><line x1="6" y1="12" x2="14" y2="12"/></svg></div></div><h3 class="aldi-services-title">Video Editor</h3><div class="aldi-services-body-content"><p class="aldi-services-desc">Edit video jadi lebih menarik dan sesuai brand kamu. Cocok untuk sosial media, promosi, atau presentasi bisnis yang ingin tampil lebih rapi, dinamis, dan profesional.</p></div><div class="aldi-services-actions"><button class="aldi-services-link" onclick="aldiServicesOpenPopup('editor')">Details</button></div></div></div>
+<div class="aldi-services-card"><div class="aldi-services-content"><div class="aldi-services-icon-wrapper"><div class="aldi-services-icon-box"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div></div><h3 class="aldi-services-title">Video Production</h3><div class="aldi-services-body-content"><p class="aldi-services-desc">Produksi video profesional dari proses shooting hingga hasil edit final. Mulai dari konten promosi hingga company profile dengan visual estetik dan pesan yang kuat.</p></div><div class="aldi-services-actions"><button class="aldi-services-link" onclick="aldiServicesOpenPopup('production')">Details</button></div></div></div>
+<div class="aldi-services-card"><div class="aldi-services-content"><div class="aldi-services-icon-wrapper"><div class="aldi-services-icon-box"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></div></div><h3 class="aldi-services-title">Social Media Management</h3><div class="aldi-services-body-content"><p class="aldi-services-desc">Proses shooting, editing, dan kelola konten dalam satu paket. Pastikan brand tetap aktif di Instagram dan TikTok tanpa perlu pusing memikirkan produksi setiap harinya sendiri.</p></div><div class="aldi-services-actions"><button class="aldi-services-link" onclick="aldiServicesOpenPopup('marketing')">Details</button></div></div></div>
+</div></div></div></div>
+
+<div class="aldi-services-popup-overlay" id="aldi-services-popup-editor"><div class="aldi-services-popup-content"><button class="aldi-services-popup-close" onclick="aldiServicesClosePopup('editor')"></button><div class="aldi-services-popup-scroll-area"><div class="aldi-services-popup-header"><h2 class="aldi-services-popup-title">Video Editor</h2><p class="aldi-services-popup-subtitle">Punya banyak video mentah tapi bingung mengolahnya? Saya siap mengubah footage kamu jadi konten profesional yang siap tayang di semua platform.</p></div><div class="aldi-services-popup-body"><div class="aldi-services-popup-section"><h3>Professional Services</h3><ul class="aldi-services-popup-list"><li>Editing Video Podcast</li><li>Reels & Short Video Editing</li><li>Pembuatan Konten Edukasi</li><li>Video Presentasi Perusahaan</li><li>Editing Video Komersial & Promosi</li><li>Konten Media Sosial (Instagram Reels, TikTok, YouTube)</li></ul></div><div class="aldi-services-popup-section"><h3>Key Benefits</h3><p>Mengubah footage mentah milik kamu menjadi konten profesional yang siap tayang dengan color grading sinematik, motion graphics dinamis, dan audio mixing yang jernih untuk memperkuat pesan visual brand kamu.</p></div><div class="aldi-services-popup-section"><h3>Work Process</h3><ul class="aldi-services-popup-list"><li>Penerimaan & Review Footage</li><li>Penyusunan Struktur & Alur</li><li>Rough Cut & Fine Cut Editing</li><li>Color Grading & Audio Mixing</li><li>Penambahan Motion Graphics & Subtitle</li><li>Review, Revisi & Ekspor Final</li></ul></div></div><div class="aldi-services-popup-cta"><a href="https://instagram.com/aldiiiwijaya_" class="aldi-services-popup-cta-btn" target="_blank">Consultation</a></div></div></div></div>
+<div class="aldi-services-popup-overlay" id="aldi-services-popup-production"><div class="aldi-services-popup-content"><button class="aldi-services-popup-close" onclick="aldiServicesClosePopup('production')"></button><div class="aldi-services-popup-scroll-area"><div class="aldi-services-popup-header"><h2 class="aldi-services-popup-title">Video Production</h2><p class="aldi-services-popup-subtitle">Layanan produksi video lengkap dari proses shooting hingga hasil edit final. Visual sinematik dan storytelling yang kuat untuk mempresentasikan brand kamu secara profesional.</p></div><div class="aldi-services-popup-body"><div class="aldi-services-popup-section"><h3>Professional Services</h3><ul class="aldi-services-popup-list"><li>Video Promosi & Marketing</li><li>Video Personal Branding</li><li>Video Showcase Produk</li><li>Pembuatan Company Profile</li><li>Dokumentasi Acara</li><li>Video Pernikahan & Prewedding</li></ul></div><div class="aldi-services-popup-section"><h3>Key Benefits</h3><p>Menghasilkan konten video dari nol mulai dari proses shooting hingga hasil edit final yang siap digunakan untuk kebutuhan brand dan bisnis kamu dengan visual yang estetik dan pesan yang tepat sasaran.</p></div><div class="aldi-services-popup-section"><h3>Work Process</h3><ul class="aldi-services-popup-list"><li>Konsultasi & Pengembangan Brief</li><li>Perencanaan & Strategi Pra-produksi</li><li>Perekaman Video Profesional</li><li>Editing & Penyempurnaan Pasca-produksi</li><li>Proses Review & Revisi Klien</li><li>Pengiriman Final</li></ul></div></div><div class="aldi-services-popup-cta"><a href="https://instagram.com/aldiiiwijaya_" class="aldi-services-popup-cta-btn" target="_blank">Consultation</a></div></div></div></div>
+<div class="aldi-services-popup-overlay" id="aldi-services-popup-marketing"><div class="aldi-services-popup-content"><button class="aldi-services-popup-close" onclick="aldiServicesClosePopup('marketing')"></button><div class="aldi-services-popup-scroll-area"><div class="aldi-services-popup-header"><h2 class="aldi-services-popup-title">Social Media Management</h2><p class="aldi-services-popup-subtitle">Paket lengkap untuk brand yang mau hadir aktif di sosial media. Mulai dari produksi video, editing, hingga posting. Semua diurus dalam satu paket tanpa perlu koordinasi banyak vendor.</p></div><div class="aldi-services-popup-body"><div class="aldi-services-popup-section"><h3>Professional Services</h3><ul class="aldi-services-popup-list"><li>Produksi & Shooting Video</li><li>Editing Video Profesional</li><li>Pengelolaan Instagram & TikTok</li><li>Pembuatan Caption & Hashtag</li><li>Penjadwalan & Posting Konten</li><li>Reels, Short Video & Feed Content</li></ul></div><div class="aldi-services-popup-section"><h3>Key Benefits</h3><p>Memastikan brand kamu tampil aktif dan konsisten di media sosial tanpa perlu repot mengurus produksi sendiri. Semua dikelola dalam satu paket mulai dari visual, tone, hingga jadwal konten bulanan.</p></div><div class="aldi-services-popup-section"><h3>Work Process</h3><ul class="aldi-services-popup-list"><li>Konsultasi & Brief Konten</li><li>Perencanaan Jadwal Konten Bulanan</li><li>Produksi & Shooting Video</li><li>Editing & Finishing</li><li>Upload, Caption & Scheduling</li><li>Evaluasi & Laporan Bulanan</li></ul></div></div><div class="aldi-services-popup-cta"><a href="https://instagram.com/aldiiiwijaya_" class="aldi-services-popup-cta-btn" target="_blank">Consultation</a></div></div></div></div>
+
+<!-- ===================== FEATURED PROJECTS (HIGHLIGHT) ===================== -->
+<div class="prtcln-hdr-wrapper" id="highlightproject"><section class="prtcln-hdr-section"><div class="prtcln-hdr-container"><div class="prtcln-hdr-content"><h2 class="prtcln-hdr-judul">Featured Projects</h2><p class="prtcln-hdr-desc">Inilah bukti nyata dedikasi saya dalam membangun otoritas digital klien. Setiap metrik keberhasilan yang diraih dirancang khusus untuk memberikan hasil yang nyata bagi pertumbuhan bisnis jangka panjang.</p></div></div></section></div>
+<div class="prtcln-lb-overlay" id="prtcln-lb" role="dialog" aria-modal="true" aria-label="Lightbox preview">
+<div class="prtcln-lb-bg" id="prtcln-lb-bg"></div>
+<div class="prtcln-lb-card" id="prtcln-lb-card">
+<img id="prtcln-lb-img" src="" alt=""/>
+<div class="prtcln-lb-footer">
+<a class="prtcln-lb-iglink" id="prtcln-lb-iglink" href="#" target="_blank" rel="noopener noreferrer" aria-label="Lihat Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>Lihat Instagram</a>
+<button class="prtcln-lb-close" id="prtcln-lb-close" aria-label="Tutup lightbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+</div>
+</div>
+</div>
+<section id="prtcln-achievements">
+<div class="prtcln-wrapper"><div class="prtcln-container"><div class="prtcln-rows">
+<div class="prtcln-card"><div class="prtcln-phone-panel" data-num="01"><div class="prtcln-phone-frame" data-src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/highlight-client/instagram-cemilan-keto.png" data-label="Cemilan Keto" data-ig="https://www.instagram.com/cemilanketo.id/" role="button" tabindex="0" aria-label="Lihat screenshot Cemilan Keto"><div class="prtcln-phone-screen"><img src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/highlight-client/instagram-cemilan-keto.png" alt="Screenshot akun Cemilan Keto"></div><div class="prtcln-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></div></div></div>
+<div class="prtcln-body"><h3 class="prtcln-brand">Cemilan Keto</h3><p class="prtcln-desc">Tumbuh dari 0 hingga 94,5 ribu pengikut organik dengan konten visual F&B yang menonjolkan tekstur dan kualitas bahan sehat. Strategi storytelling tren-sentris berhasil menciptakan komunitas loyal di seputar gaya hidup keto, mendorong engagement tinggi dan konversi penjualan yang signifikan setiap minggunya.</p><div class="prtcln-stats"><div class="prtcln-stat"><span class="prtcln-stat-val">94,5 Ribu</span><span class="prtcln-stat-lbl">Followers</span></div><div class="prtcln-stat"><span class="prtcln-stat-val">3,9 Juta</span><span class="prtcln-stat-lbl">Views</span></div><span class="prtcln-tag">F&B</span></div></div>
+</div>
+<div class="prtcln-card prtcln-reverse"><div class="prtcln-phone-panel" data-num="02"><div class="prtcln-phone-frame" data-src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/highlight-client/instagram-seven-the-salon.png" data-label="Seven The Salon" data-ig="https://www.instagram.com/7seventhesalon/" role="button" tabindex="0" aria-label="Lihat screenshot Seven The Salon"><div class="prtcln-phone-screen"><img src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/highlight-client/instagram-seven-the-salon.png" alt="Screenshot akun Seven The Salon"></div><div class="prtcln-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></div></div></div>
+<div class="prtcln-body"><h3 class="prtcln-brand">Seven The Salon</h3><p class="prtcln-desc">Memperkuat branding premium melalui visual elegan, meraih hingga 2,7 juta penayangan per konten. Identitas visual yang kuat membangun persepsi mewah dan kepercayaan audiens terhadap brand, memperkuat posisi sebagai salon premium pilihan utama di kota dengan loyalitas klien yang terus meningkat dari waktu ke waktu.</p><div class="prtcln-stats"><div class="prtcln-stat"><span class="prtcln-stat-val">34,5 Ribu</span><span class="prtcln-stat-lbl">Followers</span></div><div class="prtcln-stat"><span class="prtcln-stat-val">2,7 Juta</span><span class="prtcln-stat-lbl">Views</span></div><span class="prtcln-tag">Kerastase Salon</span></div></div>
+</div>
+<div class="prtcln-card"><div class="prtcln-phone-panel" data-num="03"><div class="prtcln-phone-frame" data-src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/highlight-client/instagram-tahu-talaga.png" data-label="Tahu Talaga" data-ig="https://www.instagram.com/tahutalaga/" role="button" tabindex="0" aria-label="Lihat screenshot Tahu Talaga"><div class="prtcln-phone-screen"><img src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/highlight-client/instagram-tahu-talaga.png" alt="Screenshot akun Tahu Talaga"></div><div class="prtcln-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></div></div></div>
+<div class="prtcln-body"><h3 class="prtcln-brand">Tahu Talaga</h3><p class="prtcln-desc">Memadukan nilai legendaris dengan estetika modern, meraih 1,4 juta penayangan. Identitas visual yang segar berhasil mempertahankan nilai heritage brand sambil menjangkau generasi baru konsumen, menghadirkan narasi autentik yang menyentuh nostalgia sekaligus relevan dengan tren konten masa kini.</p><div class="prtcln-stats"><div class="prtcln-stat"><span class="prtcln-stat-val">15,1 Ribu</span><span class="prtcln-stat-lbl">Followers</span></div><div class="prtcln-stat"><span class="prtcln-stat-val">1,4 Juta</span><span class="prtcln-stat-lbl">Views</span></div><span class="prtcln-tag">Pabrik Tahu</span></div></div>
+</div>
+</div>
+<div class="prtcln-highlight"><p>"Setiap brand punya cerita yang layak diceritakan visual yang tepat membuat orang yang tepat berhenti, menonton, dan mengingatnya."</p></div>
+</div></div>
+</section>
+
+<!-- ===================== GALLERY (CREATIVE PORTFOLIO) ===================== -->
+<section id="galleryproject">
+<div class="galproj-hdr-wrapper">
+<section class="galproj-hdr-section"><div class="galproj-hdr-container"><div class="galproj-hdr-content"><h2 class="galproj-judul">Creative Portfolio</h2><p class="galproj-hdr-desc">Eksplorasi ragam karya visual mulai dari konten F&B yang menggugah hingga branding premium yang elegan. Wujud nyata dari sebuah eksekusi teknis yang presisi, inovatif, dan disesuaikan dengan tren terkini.</p></div></div></section>
+</div>
+<div class="galproj-wrapper">
+<div class="galproj-tabs">
+<button class="galproj-tab galproj-tab--active" data-tab="video">Project Video</button>
+<button class="galproj-tab" data-tab="foto">Project Photo</button>
+<button class="galproj-tab" data-tab="certificate">Certificate</button>
+</div>
+<div class="galproj-panel galproj-panel--active galproj-panel--collapsed" data-panel="video"><div class="galproj-grid" id="galproj-grid-video"></div><div class="galproj-toggle-wrap"><button class="galproj-toggle" data-panel="video">Lihat Selengkapnya</button></div></div>
+<div class="galproj-panel galproj-panel--collapsed" data-panel="foto"><div class="galproj-grid" id="galproj-grid-foto"></div><div class="galproj-toggle-wrap"><button class="galproj-toggle" data-panel="foto">Lihat Selengkapnya</button></div></div>
+<div class="galproj-panel galproj-panel--collapsed" data-panel="certificate"><div class="galproj-grid" id="galproj-grid-certificate"></div><div class="galproj-toggle-wrap"><button class="galproj-toggle" data-panel="certificate">Lihat Selengkapnya</button></div></div>
+</div>
+<div class="galproj-modal-overlay" id="galproj-modal">
+<div class="galproj-modal-box">
+<button class="galproj-modal-close" id="galproj-modal-close">&#x2715;</button>
+<div class="galproj-modal-video-wrap" id="galproj-modal-video-wrap" style="display:none"><div class="galproj-modal-video"><iframe id="galproj-modal-iframe" src="" allowfullscreen allow="autoplay; encrypted-media" loading="lazy"></iframe></div></div>
+<div class="galproj-modal-scroll-area"><div class="galproj-modal-body" id="galproj-modal-body"></div></div>
+</div>
+</div>
+<div class="galproj-cert-modal" id="galproj-cert-modal">
+<div class="galproj-cert-modal-content"><button class="galproj-cert-modal-close" id="galproj-cert-modal-close">&times;</button><img src="" alt="Certificate Detail" class="galproj-cert-modal-image" id="galproj-cert-modal-image"></div>
+</div>
+<div class="galproj-lightbox" id="galproj-lightbox">
+<div class="galproj-lightbox-inner">
+<button class="galproj-lightbox-close" id="galproj-lb-close">&#x2715;</button>
+<button class="galproj-lightbox-nav galproj-lightbox-prev" id="galproj-lb-prev">&#8249;</button>
+<img class="galproj-lightbox-img" id="galproj-lb-img" src="" alt="">
+<button class="galproj-lightbox-nav galproj-lightbox-next" id="galproj-lb-next">&#8250;</button>
+<div class="galproj-lightbox-counter" id="galproj-lb-counter"></div>
+</div>
+</div>
+</section>
+
+<!-- ===================== VALUE / WORKFLOW ===================== -->
+<div class="aldi-cb-hdr-wrapper"><section class="aldi-cb-hdr-section"><div class="aldi-cb-hdr-container"><div class="aldi-cb-hdr-content"><h2 class="aldi-cb-judul">Workflow &amp; Values</h2><p class="aldi-cb-hdr-desc">Lebih dari sekadar videografer, saya adalah mitra strategis Anda. Saya hadir untuk memahami kebutuhan unik brand Anda secara mendalam, mulai dari fase ideasi, pra-produksi, hingga konten siap dipublikasikan.</p></div></div></section></div>
+<section id="value">
+<div class="aldi-cb-wrapper"><div class="aldi-cb-container">
+<div class="aldi-cb-tabs">
+<button class="aldi-cb-tab aldi-cb-tab--active" data-cb-tab="wcm">Mengapa Memilih Saya</button>
+<button class="aldi-cb-tab" data-cb-tab="wp">Work Process</button>
+</div>
+<div class="aldi-cb-panel aldi-cb-panel--active" data-cb-panel="wcm">
+<div class="aldi-cb-grid">
+<div class="aldi-cb-card"><div class="aldi-cb-icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div><h3 class="aldi-cb-title">One-Stop Solution</h3><p class="aldi-cb-desc">Shoot, edit, dan kelola konten sosial media dalam satu tangan. Tidak perlu koordinasi banyak vendor, semua selesai lebih cepat dan konsisten.</p></div>
+<div class="aldi-cb-card"><div class="aldi-cb-icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><h3 class="aldi-cb-title">Pengalaman 6+ Tahun</h3><p class="aldi-cb-desc">Aktif sejak 2019 dan telah menangani 20+ brand dari berbagai sektor: F&amp;B, fashion, salon, fitness, hingga kuliner. Jam terbang berbicara.</p></div>
+<div class="aldi-cb-card"><div class="aldi-cb-icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3 class="aldi-cb-title">Hasil yang Terbukti</h3><p class="aldi-cb-desc">Brand yang kami tangani tumbuh nyata, dari 0 ke 94.5K followers hingga konten viral 3.9 juta views. Bukan janji, tapi rekam jejak.</p></div>
+<div class="aldi-cb-card"><div class="aldi-cb-icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><h3 class="aldi-cb-title">Komunikasi Jelas</h3><p class="aldi-cb-desc">Respon cepat, brief terstruktur, dan update progres yang transparan. Kamu tidak akan dibiarkan menebak-nebak status projectnya.</p></div>
+<div class="aldi-cb-card"><div class="aldi-cb-icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><h3 class="aldi-cb-title">Kualitas Tanpa Kompromi</h3><p class="aldi-cb-desc">Setiap frame dibuat dengan niat. Dari lighting, komposisi, hingga editing, semua dieksekusi dengan standar yang konsisten di setiap project.</p></div>
+<div class="aldi-cb-card"><div class="aldi-cb-icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M4.93 4.93a10 10 0 0 0 0 14.14"/></svg></div><h3 class="aldi-cb-title">Fleksibel &amp; Remote-Friendly</h3><p class="aldi-cb-desc">Berbasis di Bandung tapi bisa bekerja remote untuk editing dan social media management. Shooting luar kota pun bisa diatur sesuai kebutuhan.</p></div>
+</div>
+</div>
+<div class="aldi-cb-panel" data-cb-panel="wp">
+<div class="aldi-cb-steps">
+<div class="aldi-cb-step-card"><div class="aldi-cb-number">01</div><div class="aldi-cb-step-icon-box"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><div class="aldi-cb-step-content"><h3 class="aldi-cb-step-title">Konsultasi &amp; Brief</h3><p class="aldi-cb-step-desc">Kita ngobrol dulu soal brand kamu, tujuan konten, target audiens, dan referensi visual. Tidak ada komitmen di tahap ini, cukup ceritakan kebutuhanmu.</p></div></div>
+<div class="aldi-cb-connector"></div>
+<div class="aldi-cb-step-card"><div class="aldi-cb-number">02</div><div class="aldi-cb-step-icon-box"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div><div class="aldi-cb-step-content"><h3 class="aldi-cb-step-title">Perencanaan &amp; Konsep</h3><p class="aldi-cb-step-desc">Setelah brief disepakati, saya menyusun konsep visual, timeline produksi, dan jadwal konten. Semua direncanakan sebelum kamera menyala.</p></div></div>
+<div class="aldi-cb-connector"></div>
+<div class="aldi-cb-step-card"><div class="aldi-cb-number">03</div><div class="aldi-cb-step-icon-box"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div><div class="aldi-cb-step-content"><h3 class="aldi-cb-step-title">Produksi &amp; Shooting</h3><p class="aldi-cb-step-desc">Eksekusi di lokasi dengan perhatian penuh pada lighting, komposisi, dan storytelling. Setiap shot dibuat dengan tujuan yang jelas sesuai konsep.</p></div></div>
+<div class="aldi-cb-connector"></div>
+<div class="aldi-cb-step-card"><div class="aldi-cb-number">04</div><div class="aldi-cb-step-icon-box"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><line x1="6" y1="9" x2="10" y2="9"/><line x1="6" y1="12" x2="14" y2="12"/></svg></div><div class="aldi-cb-step-content"><h3 class="aldi-cb-step-title">Editing &amp; Finishing</h3><p class="aldi-cb-step-desc">Footage diolah dengan color grading, audio mixing, motion graphics, dan penyesuaian tempo. Hasilnya adalah video yang siap tampil di platform manapun.</p></div></div>
+<div class="aldi-cb-connector"></div>
+<div class="aldi-cb-step-card"><div class="aldi-cb-number">05</div><div class="aldi-cb-step-icon-box"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div><div class="aldi-cb-step-content"><h3 class="aldi-cb-step-title">Review &amp; Revisi</h3><p class="aldi-cb-step-desc">Kamu melihat hasilnya dan memberikan feedback. Revisi dilakukan sampai konten benar-benar sesuai ekspektasi dan siap untuk dipublikasikan.</p></div></div>
+<div class="aldi-cb-connector"></div>
+<div class="aldi-cb-step-card"><div class="aldi-cb-number">06</div><div class="aldi-cb-step-icon-box"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div><div class="aldi-cb-step-content"><h3 class="aldi-cb-step-title">Delivery &amp; Upload</h3><p class="aldi-cb-step-desc">Konten final dikirimkan dalam format yang sesuai platform. Untuk paket Social Media Management, saya yang handle upload, caption, dan scheduling-nya.</p></div></div>
+</div>
+</div>
+</div></div>
+</section>
+
+<!-- ===================== TESTIMONI ===================== -->
+<div class="aldi-testimoni-wrapper" data-embed="aldi-testimoni">
+<section class="aldi-testimoni-section">
+<div class="aldi-testimoni-container">
+<div class="aldi-testimoni-content">
+<h2 id="aldi-judul-testimoni" class="aldi-judul-testimoni">Client Testimonials</h2>
+<p class="aldi-testimoni-description">Kepuasan mitra adalah prioritas utama kami. Simak pengalaman nyata dari mereka yang telah bertransformasi secara signifikan melalui strategi digital dan identitas visual kuat yang kami kembangkan bersama.</p>
+</div>
+</div>
+</section>
+</div>
+<section id="testimoni">
+<div class="aldi-testimonial-wrap" itemscope itemtype="https://schema.org/LocalBusiness">
+<meta itemprop="name" content="Aldi Wijaya Photography & Videography Services">
+<div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+<meta itemprop="ratingValue" content="5">
+<meta itemprop="bestRating" content="5">
+<meta itemprop="ratingCount" content="3">
+<meta itemprop="reviewCount" content="3">
+</div>
+<div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+<meta itemprop="streetAddress" content="Jl. Contoh No. 123">
+<meta itemprop="addressLocality" content="Bandung">
+<meta itemprop="addressRegion" content="Jawa Barat">
+<meta itemprop="postalCode" content="40111">
+<meta itemprop="addressCountry" content="ID">
+</div>
+<div class="aldi-testimonial-container">
+<div class="aldi-testimonial-inner">
+<div class="aldi-testimonial-grid">
+<div class="aldi-testimonial-form-card">
+<div class="aldi-testimonial-form-content">
+<div class="aldi-testimonial-form-header">
+<svg class="aldi-testimonial-form-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<h3 class="aldi-testimonial-form-title">Bagikan Testimoni</h3>
+</div>
+<form class="aldi-testimonial-form" id="aldi-testimonial-form" aria-label="Formulir untuk mengirim testimoni tentang jasa videography Aldi Wijaya">
+<div class="aldi-testimonial-form-group">
+<label class="aldi-testimonial-form-label" for="aldi-testimonial-name">Nama</label>
+<input type="text" id="aldi-testimonial-name" class="aldi-testimonial-form-input" placeholder="Masukkan nama Anda" required>
+</div>
+<div class="aldi-testimonial-form-group">
+<label class="aldi-testimonial-form-label" for="aldi-testimonial-email">Email</label>
+<input type="email" id="aldi-testimonial-email" class="aldi-testimonial-form-input" placeholder="Masukkan email Anda" required>
+</div>
+<div class="aldi-testimonial-form-group">
+<label class="aldi-testimonial-form-label" for="aldi-testimonial-message">Testimoni</label>
+<textarea id="aldi-testimonial-message" class="aldi-testimonial-form-textarea" placeholder="Ceritakan pengalaman Anda" required></textarea>
+</div>
+<button type="submit" class="aldi-testimonial-form-button" aria-label="Kirim testimoni pengalaman Anda dengan jasa videography Aldi Wijaya"><svg class="aldi-testimonial-send-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Kirim Testimoni</button>
+</form>
+</div>
+</div>
+<div class="aldi-testimonial-list-card">
+<div class="aldi-testimonial-list-content">
+<div class="aldi-testimonial-list-header">
+<svg class="aldi-testimonial-list-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<h3 class="aldi-testimonial-list-title">Testimoni Klien</h3>
+<span class="aldi-testimonial-count" id="aldi-testimonial-count">(3)</span>
+</div>
+<div class="aldi-testimonial-list" id="aldi-testimonial-list"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===================== CONTACT & FAQ ===================== -->
+<section id="contact" class="cf-section">
+<div class="cf-container">
+<div class="cf-hdr">
+<h2 class="cf-judul">Strategic Partnership</h2>
+<p class="cf-hdr-desc">Siap untuk meningkatkan skala bisnis Anda? Mari berkolaborasi membangun identitas visual yang autentik serta strategi konten yang memberikan dampak nyata bagi jangkauan pasar dan pertumbuhan bisnis Anda.</p>
+</div>
+<div class="cf-card">
+<div class="cf-left">
+<div class="cf-tagline">SIAP BERKOLABORASI?</div>
+<p class="cf-body-text">Ceritakan brand kamu, tantangan yang dihadapi, atau sekadar say hi. Saya selalu terbuka untuk kolaborasi baru yang bermakna.</p>
+<div class="cf-actions">
+<a class="cf-btn" href="https://www.instagram.com/aldiiiwijaya_/" target="_blank" rel="noopener noreferrer" aria-label="DM di Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>DM di Instagram</a>
+<a class="cf-btn" href="mailto:aldiiiwijaya@gmail.com" aria-label="Kirim Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>aldiiiwijaya@gmail.com</a>
+</div>
+<div class="cf-divider"></div>
+<div class="cf-faq-label">Pertanyaan Umum</div>
+<div class="cf-faq-wrap">
+<div class="cf-faq-item">
+<button class="cf-faq-btn" onclick="cfFaqToggle(this)" aria-expanded="false">Berapa lama proses pengerjaannya?<span class="cf-faq-icon" aria-hidden="true"></span></button>
+<div class="cf-faq-answer"><p>Tergantung jenis dan kompleksitas project. Video editing biasanya 3-5 hari kerja, videography termasuk editing sekitar 5-7 hari kerja, dan paket Social Media Management berjalan per periode bulanan. Timeline pasti akan disepakati di awal.</p></div>
+</div>
+<div class="cf-faq-item">
+<button class="cf-faq-btn" onclick="cfFaqToggle(this)" aria-expanded="false">Apakah bisa request revisi?<span class="cf-faq-icon" aria-hidden="true"></span></button>
+<div class="cf-faq-answer"><p>Bisa. Setiap project sudah termasuk sesi revisi untuk memastikan hasil akhir sesuai ekspektasi kamu. Jumlah dan detail revisi akan disepakati bersama di awal sebelum project berjalan.</p></div>
+</div>
+<div class="cf-faq-item">
+<button class="cf-faq-btn" onclick="cfFaqToggle(this)" aria-expanded="false">Apakah bisa untuk luar Bandung?<span class="cf-faq-icon" aria-hidden="true"></span></button>
+<div class="cf-faq-answer"><p>Untuk video editing dan social media management bisa dikerjakan remote dari mana saja. Untuk shooting on-site di luar Bandung bisa dilakukan dengan kesepakatan soal akomodasi dan transportasi di awal project.</p></div>
+</div>
+<div class="cf-faq-item">
+<button class="cf-faq-btn" onclick="cfFaqToggle(this)" aria-expanded="false">Apa bedanya ketiga paket layanan?<span class="cf-faq-icon" aria-hidden="true"></span></button>
+<div class="cf-faq-answer"><p>Videographer fokus pada produksi dan shooting di lapangan. Video Editor mengolah footage menjadi konten siap tayang. Social Media Management adalah paket lengkap shoot, edit, dan kelola konten sosial media dalam satu paket bulanan.</p></div>
+</div>
+<div class="cf-faq-item">
+<button class="cf-faq-btn" onclick="cfFaqToggle(this)" aria-expanded="false">Bagaimana cara memulai project?<span class="cf-faq-icon" aria-hidden="true"></span></button>
+<div class="cf-faq-answer"><p>Cukup DM di Instagram atau kirim email. Ceritakan kebutuhan brand kamu, lalu kita diskusi soal konsep, timeline, dan budget. Konsultasi pertama sepenuhnya gratis dan tanpa tekanan untuk langsung memutuskan.</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===================== CLIENTS ===================== -->
+<div class="aldi-clients-wrapper" data-embed="aldi-clients">
+<section class="aldi-clients-section-hdr">
+<div class="aldi-clients-hdr-container">
+<div class="aldi-clients-hdr-content">
+<h2 id="judul-clients" class="aldi-judul-clients">Trusted Partnerships</h2>
+<p class="aldi-clients-description">Dari sektor F&amp;B hingga layanan gaya hidup, saya bangga menjadi bagian dari perjalanan digital mereka melalui produksi konten kreatif yang menarik serta manajemen media sosial yang tepat sasaran dan efektif.</p>
+</div>
+</div>
+</section>
+</div>
+<section id="clients" class="aldi-clients-section">
+<div class="aldi-clients-container">
+<div class="aldi-clients-grid">
+<div class="aldi-clients-logo" data-name="Peek A Boo" itemscope itemtype="https://schema.org/Organization"><img src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/logo-client/peek-a-boo-client-of-aldi-wijaya.jpg.png" alt="Peek A Boo - Klien Jasa Videography Salon di Majalengka"></div>
+<div class="aldi-clients-logo" data-name="Pulse Fitness" itemscope itemtype="https://schema.org/Organization"><img src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/logo-client/pulse-fitness-client-of-aldi-wijaya.jpg.png" alt="Pulse Fitness - Klien Jasa Videography Gym di Bandung"></div>
+<div class="aldi-clients-logo" data-name="Nikuya Meat Shop" itemscope itemtype="https://schema.org/Organization"><img src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/logo-client/nikuya-meat-shop-client-of-aldi-wijaya.jpg.png" alt="Nikuya Meat Shop - Klien Jasa Videography Kuliner di Cirebon"></div>
+<div class="aldi-clients-logo" data-name="Cemilan Keto" itemscope itemtype="https://schema.org/Organization"><img src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/logo-client/cemilan-keto-client-of-aldi-wijaya.jpg.png" alt="Cemilan Keto - Klien Jasa Videography Produk di Kuningan"></div>
+<div class="aldi-clients-logo" data-name="Seven The Salon" itemscope itemtype="https://schema.org/Organization"><img src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/logo-client/seven-the-salon-client-of-aldi-wijaya.jpg.png" alt="Seven The Salon - Klien Jasa Videography Salon di Bandung"></div>
+<div class="aldi-clients-logo" data-name="Tahu Talaga" itemscope itemtype="https://schema.org/Organization"><img src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/logo-client/tahu-talaga-client-of-aldi-wijaya.jpg.jpg" alt="Tahu Talaga - Klien Jasa Videography Produk di Majalengka"></div>
+<div class="aldi-clients-logo" data-name="White Bride" itemscope itemtype="https://schema.org/Organization"><img src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/logo-client/white-bride-client-of-aldi-wijaya.jpg.png" alt="White Bride - Klien Jasa Fotografi Wedding di Majalengka"></div>
+<div class="aldi-clients-logo" data-name="Oryza Sativa" itemscope itemtype="https://schema.org/Organization"><img src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/logo-client/oryza-sativao-client-of-aldi-wijaya.png" alt="Oryza Sativa - Klien Jasa Fotografi Wedding di Majalengka"></div>
+<div class="aldi-clients-logo" data-name="Skin Ethica" itemscope itemtype="https://schema.org/Organization"><img src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/logo-client/skin-ethica-client-of-aldi-wijaya.jpg.png" alt="Skin Ethica - Klien Jasa Videography Kecantikan di Cirebon"></div>
+<div class="aldi-clients-logo" data-name="Sambarajo" itemscope itemtype="https://schema.org/Organization"><img src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/logo-client/sambarajo-client-of-aldi-wijaya.jpg.png" alt="Sambarajo - Klien Jasa Videography Kuliner di Kuningan"></div>
+<div class="aldi-clients-logo" data-name="Lumity Studio" itemscope itemtype="https://schema.org/Organization"><img src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/logo-client/lumity-studio-client-of-aldi-wijaya.jpg.png" alt="Lumity Studio - Klien Jasa Videography Studio di Kuningan"></div>
+<div class="aldi-clients-logo" data-name="Anita Salon" itemscope itemtype="https://schema.org/Organization"><img src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/logo-client/anita-salon-client-of-aldi-wijaya.jpg.png" alt="Anita Salon - Klien Jasa Videography Salon di Bandung"></div>
+<div class="aldi-clients-logo" data-name="ByManda" itemscope itemtype="https://schema.org/Organization"><img src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/logo-client/bymanda-client-of-aldi-wijaya.jpg.png" alt="ByManda - Klien Jasa Videography untuk Digital Marketing di Majalengka"></div>
+<div class="aldi-clients-logo" data-name="Accent Ambios" itemscope itemtype="https://schema.org/Organization"><img src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/logo-client/accent-ambios-client-of-aldi-wijaya.jpg.png" alt="Accent Ambios - Klien Jasa Videography Produk di Bandung"></div>
+<div class="aldi-clients-logo" data-name="Kopi Bituka" itemscope itemtype="https://schema.org/Organization"><img src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/logo-client/kopi-bituka-client-of-aldi-wijaya.jpg.png" alt="Kopi Bituka - Klien Jasa Fotografi Produk di Kuningan"></div>
+<div class="aldi-clients-logo" data-name="RibsGold" itemscope itemtype="https://schema.org/Organization"><img src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/logo-client/ribsgold-client-of-aldi-wijaya.jpg.png" alt="RibsGold - Klien Jasa Videography Fashion di Cirebon"></div>
+<div class="aldi-clients-logo" data-name="8amities" itemscope itemtype="https://schema.org/Organization"><img src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/logo-client/8amities-client-of-aldi-wijaya.jpg.png" alt="8amities - Klien Jasa Videography Fashion di Bandung"></div>
+<div class="aldi-clients-logo" data-name="Bolan Thai Kitchen" itemscope itemtype="https://schema.org/Organization"><img src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/logo-client/bolan-thai-kitchen-client-of-aldi-wijaya.jpg.png" alt="Bolan Thai Kitchen - Klien Jasa Videography Kuliner di Kuningan"></div>
+<div class="aldi-clients-logo" data-name="Fanatic Made" itemscope itemtype="https://schema.org/Organization"><img src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/logo-client/fanatic-made-client-of-aldi-wijaya.jpg.png" alt="Fanatic Made - Klien Jasa Videography Brand di Bandung"></div>
+<div class="aldi-clients-logo" data-name="Nameless Society" itemscope itemtype="https://schema.org/Organization"><img src="https://raw.githubusercontent.com/aldiiiwijaya/nebula-creative-cdn/main/logo-client/namelesssociety-client-of-aldi-wijaya.jpg.png" alt="Nameless Society - Klien Jasa Videography di Bandung"></div>
+</div>
+<div class="aldi-clients-stats">
+<div class="aldi-clients-stat"><div class="aldi-clients-stat-inner"><h3 class="aldi-clients-stat-number" data-count="50">0</h3><div class="aldi-clients-stat-label">Industries</div></div></div>
+<div class="aldi-clients-stat"><div class="aldi-clients-stat-inner"><h3 class="aldi-clients-stat-number" data-count="95">0%</h3><div class="aldi-clients-stat-label">Retention Rate</div></div></div>
+<div class="aldi-clients-stat"><div class="aldi-clients-stat-inner"><h3 class="aldi-clients-stat-number" data-count="24/7">0</h3><div class="aldi-clients-stat-label">Support</div></div></div>
+</div>
+</div>
+<div class="aldi-clients-tooltip" id="aldiClientsTooltip"></div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<div class="aldi-footer-wrapper">
+<footer class="aldi-footer">
+<div class="aldi-footer-container">
+<div class="aldi-footer-inner">
+<div class="aldi-footer-content">
+<div class="aldi-footer-main">
+<div class="aldi-footer-brand">
+<h3 class="aldi-footer-name">ALDI WIJAYA</h3>
+<p class="aldi-footer-tagline">Videographer & Social Media Management</p>
+</div>
+<div class="aldi-footer-social">
+<a href="https://instagram.com/aldiiiwijaya_" target="_blank" rel="noopener noreferrer" class="aldi-footer-link" title="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg><span>Instagram</span></a>
+<a href="https://www.linkedin.com/in/aldiiiwijaya" target="_blank" rel="noopener noreferrer" class="aldi-footer-link" title="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg><span>LinkedIn</span></a>
+<a href="https://aldiiiwijaya.crd.co" target="_blank" rel="noopener noreferrer" class="aldi-footer-link" title="Website"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg><span>Website</span></a>
+</div>
+</div>
+<div class="aldi-footer-divider"></div>
+<div class="aldi-footer-bottom">
+<p class="aldi-footer-copyright">© 2025 aldiiiwijaya_. All rights reserved.</p>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html> 
